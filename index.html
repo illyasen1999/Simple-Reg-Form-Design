@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- https://dev.to/azrall/html-css-learning-journey-48b8 -->
+    <title>Registration Form</title>
+</head>
+<body>
+    <main class="main-form">
+        <h1 class="regform-heading">Registration Form</h1>
+
+        <p class="regform-instructions">Please fill out this form with the required information</p>
+    
+        <form action="" class="reg-form">
+            <!-- Basic User Information -->
+            <label for="" class="form-items firstname">Enter Your First Name: </label>
+            <span class="warning-msg warning-name">* Please enter right input type</span>
+            <input type="text" class="form-items firstname-input input" minlength="3" maxlength="15" required>
+
+            <label for="" class="form-items lastname">Enter Your Last Name: </label>
+            <span class="warning-msg warning-name">* Please enter right input type</span>
+            <input type="text" class="form-items lastname-input input" minlength="3" maxlength="15" required>
+
+            <label for="" class="form-items email">Enter Your Email: </label>
+            <span class="warning-msg warning-email">* Please enter proper email format</span>
+            <input type="email" class="form-items email-input input" required>
+
+            <label for="" class="form-items passowrd">Create a New Password: </label>
+            <input type="password" class="form-items passowrd-input input" minlength="3" maxlength="20" required>
+
+            <!-- Kind of Account -->
+            <hr class="form-items hr-separator">
+            <section class="buttons-section">
+                <div class="individual-buttons">
+                    <input type="radio" value="person-acc" name="select-acc" id="personal-acc" class="form-items personal-acc" required>
+                    <label class="label-labels">Personal Account</label>
+                </div>
+
+                <div class="individual-buttons">
+                    <input type="radio" value="business-acc" name="select-acc" id="business-acc" class="form-items business-acc" required>
+                    <label class="label-labels">Business Account</label>
+                </div>
+
+                <div class="individual-buttons">
+                    <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required>
+                    <label class="label-labels">I accept the <a href="#" target="_blank">terms and conditions</a></label>
+                </div>
+            </section>
+            <hr class="form-items hr-separator">
+
+            <!-- Other Separator -->
+            <label for="" class="form-items profile-pic">Upload a profile picture:</label>
+            <input type="file" name="pic-upload" id="profile-pic-upload" class="form-items profile-pic-upload">
+        
+            <label for="" class="form-items age">Input your age(years)</label>
+            <input type="number" class="form-items age-input input" required>
+
+            <label for="" class="form-items discover-selection">How did you hear about us?</label>
+            <select name="select-about" id="select-about" class="form-items select-about">
+                <option value="none" selected disabled hidden>(select one)</option>
+                <option value="facebook" class="form-items select-option">Facebook</option>
+                <option value="twitter" class="form-items select-option">Twitter</option>
+                <option value="instagram" class="form-items select-option">Instagram</option>
+            </select>
+
+            <label for="" class="form-items text-area-bio"></label>
+            <textarea name="bio-area" id="bio-area" class="form-items bio-area" cols="10" rows="20" placeholder="I like coding on the beach..."></textarea>
+        
+            <input type="submit" class="submit">
+        </form>
+    </main>
+
+    <footer class="credits-footer">
+        <h4>Insipired by <a href="https://dev.to/azrall/html-css-learning-journey-48b8" target="_blank">Allan 'Azrall' Bott's Registration Form</a> </h4>
+    </footer>
+</body>
+</html>
